@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="ei-jsbsim-cnf.xml"> -->
+<PropertyList include="ei-yasim-cnf.xml">
+
+  <sim>
+    <description>Fokker Eindecker-I</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+
