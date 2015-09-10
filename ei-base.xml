@@ -66,23 +66,15 @@
 
   </sim>
 
-  <controls>
-    <engines>
-      <engine>
-        <mixture archive="y"> 0.65 </mixture>
-      </engine>
-    </engines>
-  </controls> 
 
   <input>
     <keyboard include="Nasal/eiii-keyboard.xml"/>
   </input>
 
   <nasal>
-    <eiii>
-      <file>Aircraft/Fokker-EI/Nasal/eiii.nas</file>
+    <ei>
       <file>Aircraft/Fokker-EI/Nasal/liveries.nas</file>
-    </eiii>
+    </ei>
     <guns>
       <file>Aircraft/Fokker-EI/Nasal/weapons.nas</file>
     </guns>

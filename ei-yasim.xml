@@ -10,17 +10,17 @@
      Height       : 2.40 m    (   7 ft 9 in )
      Empty weight :  400 kg   ( 882 lb      )
      Engine       : 1 Oberursel U.0 Rotary Engine ( 80 hp )
-     Max speed    :  134 km/h (  73 kt      )
+     Max speed    :  124 km/h (  73 kt      )
 -->
 
-<airplane mass="789" >
+<airplane mass="889" >
 
   <approach speed="33" aoa="4" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   </approach>
   
-  <cruise speed="76" alt="5000" fuel="0.79" >
+  <cruise speed="77" alt="1000" fuel="0.79" >
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1" />
     <control-setting axis="/controls/engines/engine[0]/mixture" value="0.78" />
   </cruise>
@@ -94,23 +94,23 @@
   -->
 
 <propeller x="3.118" y="0" z="0.281"
-              mass="235"
-              radius="1.1998"
+              mass="275"
+              radius="1.195"
               moment="24"
-	        cruise-speed="76"
+	        cruise-speed="77"
 	        cruise-rpm="1170"
-              cruise-alt="5000" 
-	        cruise-power="76"
+              cruise-alt="1000" 
+	        cruise-power="72"
               takeoff-power="80" 
 	        takeoff-rpm="1200"> 
            <actionpt x="3.516" y="0" z="0.281"/>
              <piston-engine eng-rpm="1200"
                             eng-power="80"
-                            displacement="772.16"
-                            bore="4.9"
-                            stroke="5.9" 
-                            min-throttle="0.049"
-                            compression="4.05"/>
+                            displacement="721.5"
+                            bore="4.88"
+                            stroke="5.51" 
+                            min-throttle="0.052"
+                            compression="4.0"/>
            <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
            <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
            <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
@@ -138,7 +138,7 @@
         sfric="1.1"
         dfric="0.6"
         compression="0.02">
- <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1"  dst0="1" dst1="0" control="CASTERING"/>
+ <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="0.25" dst1="-0.25"/>
   </gear>
 
   <!-- Fuel: Forward 142 lbs -->
@@ -147,6 +147,6 @@
       <!-- Pilot Weight -->
  <weight x="1.565" y="0.00" z="0.303" mass-prop="/sim/weight[0]/weight-lb"/>
 
- <ballast x="0.38" y="0" z="-0.710" mass="200"/>
+ <ballast x="0.58" y="0" z="-0.710" mass="200"/>
   
 </airplane>
