@@ -20,7 +20,7 @@
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   </approach>
   
-  <cruise speed="77" alt="1000" fuel="0.79" >
+  <cruise speed="82" alt="1000" fuel="0.79" >
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1" />
     <control-setting axis="/controls/engines/engine[0]/mixture" value="0.78" />
   </cruise>
@@ -100,7 +100,7 @@
 	        cruise-speed="77"
 	        cruise-rpm="1170"
               cruise-alt="1000" 
-	        cruise-power="72"
+	        cruise-power="82"
               takeoff-power="80" 
 	        takeoff-rpm="1200"> 
            <actionpt x="3.516" y="0" z="0.281"/>
@@ -135,18 +135,18 @@
 
   <!-- Tail wheel -->
   <gear x="-3.138" y="0" z="-0.195" 
-        sfric="1.1"
-        dfric="0.6"
+        sfric="0.41"
+        dfric="0.46"
         compression="0.02">
  <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="0.25" dst1="-0.25"/>
   </gear>
 
   <!-- Fuel: Forward 142 lbs -->
-  <tank x="2.24" y="0" z="0.562" capacity="160"/>
+  <tank x="2.4" y="0" z="0.562" capacity="140"/>
 
       <!-- Pilot Weight -->
  <weight x="1.565" y="0.00" z="0.303" mass-prop="/sim/weight[0]/weight-lb"/>
 
- <ballast x="0.58" y="0" z="-0.710" mass="200"/>
+ <ballast x="0.18" y="0" z="-0.710" mass="200"/>
   
 </airplane>
